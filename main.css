@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+}
+#container {
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#tools {
+  display: flex;
+  justify-content: center;
+}
+#errorMsg {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangram Puzzle</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="puzzle.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body onload="LayoutHandler();">
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div id="container">
+      <div class="border" id="puzzle">
+        <div id="purple-triangle"></div>
+        <div id="blue-triangle"></div>
+        <div id="red-triangle"></div>
+        <div id="green-square"></div>
+        <div id="teal-triangle"></div>
+        <div id="violet-triangle"></div>
+        <div id="gold-rhomboid"></div>
+      </div>
+      <div class="border" id="outline">
+        <img src="image.jpg" id="outlineImg" />
+      </div>
+    </div>
+    <div>&nbsp;</div>
+    <div id="errorMsg" hidden>
+      Gold Rhomboid Is Not allowed To be Rotated!!!
+    </div>
+    <div>&nbsp;</div>
+    <div id="tools" class="btn-group">
+      <button id="rotateBtn" type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-repeat"></span>
+      </button>
+      <button id="moveLeftBtn" type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+      </button>
+      <button id="moveRightBtn" type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-arrow-right"></span>
+      </button>
+      <button id="moveUpBtn" type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+      </button>
+      <button id="moveDownBtn" type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-arrow-down"></span>
+      </button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Main.js"></script>
+    <script src="DragDrop.js"></script>
+    <script src="Controls.js"></script>
+  </body>
+</html>
